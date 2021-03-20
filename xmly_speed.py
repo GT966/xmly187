@@ -25,6 +25,8 @@ BARK = ''                   # bark服务,自行搜索; secrets可填;形如jfjqx
 SCKEY = ''                  # Server酱的SCKEY; secrets可填
 TG_BOT_TOKEN = ''           # telegram bot token 自行申请
 TG_USER_ID = ''             # telegram 用户ID
+DD_BOT_TOKEN = ''
+DD_BOT_SECRET = ''
 
 ###################################################
 # 对应方案1:  GitHub action自动运行,此处无需填写;
@@ -50,6 +52,10 @@ if "XMLY_SPEED_COOKIE" in os.environ:
         TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]
         TG_USER_ID = os.environ["TG_USER_ID"]
         print("Telegram 推送打开")
+    if "DD_BOT_TOKEN" in os.environ and os.environ["DD_BOT_TOKEN"] and "DD_BOT_SECRET" in os.environ and os.environ["DD_BOT_SECRET"]:
+        TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]
+        DD_BOT_SECRET = os.environ["TG_USER_ID"]
+        print("DD 推送打开")
 
 
 ###################################################

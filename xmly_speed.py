@@ -1090,7 +1090,8 @@ def run():
         bark("⏰ 喜马拉雅极速版", message)
         serverJ("⏰ 喜马拉雅极速版", message)
         telegram_bot("⏰ 喜马拉雅极速版", message)
-
+        dd_bot_token("⏰ 喜马拉雅极速版", message)
+        dd_bot_secret ("⏰ 喜马拉雅极速版", message)
 
 if __name__ == "__main__":
     run()

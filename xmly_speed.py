@@ -53,7 +53,7 @@ if "XMLY_SPEED_COOKIE" in os.environ:
         TG_USER_ID = os.environ["TG_USER_ID"]
         print("Telegram 推送打开")
     if "DD_BOT_TOKEN" in os.environ and os.environ["DD_BOT_TOKEN"] and "DD_BOT_SECRET" in os.environ and os.environ["DD_BOT_SECRET"]:
-        TG_BOT_TOKEN = os.environ["DD_BOT_TOKEN"]
+        DD_BOT_TOKEN = os.environ["DD_BOT_TOKEN"]
         DD_BOT_SECRET = os.environ["DD_BOT_SECRET"]
         print("DD 推送打开")
 
